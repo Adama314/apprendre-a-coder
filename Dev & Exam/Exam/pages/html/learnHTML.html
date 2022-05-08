@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="learnHTML.css">
+    <title>Apprendre html</title>
+</head>
+<body>
+    <div>
+        <h1><u>HTML: HyperText Markup Language</u></h1>
+        <hr>
+        <h2><u>Contenu</u></h2>
+        <ul>
+            <li>Structure d’un document HTML</li>
+            <li>Organisation du texte</li>
+            <li> Les liens</li>
+            <li>Les listes</li>
+            <li> Les images</li>
+            <li>Les tableaux</li>
+            <li>Les formulaires</li>
+        </ul>
+        <h2><u>HTML</u></h2>
+        <p>
+            Le HTML est un  format de présentation de données. Il permet de créer des pages web pouvant 
+            être lues dans des navigateurs; c'est un langage de description de données et pas un langage de 
+            programmation.
+        </p>
+    
+        <h2><u>HTML ET CSS</u></h2>
+        <p>
+            le W3C préconise de maintenir une séparation entre la structure et la présentation d’un document
+            (Séparation du fond et de la forme).
+            Il adjoint au HTML la notion de feuille de style à travers le langage CSS;
+            HTML décrit la structure du document, CSS se charge de la présentation.
+            Un même document HTML peut être présenté de différentes façons à l'aide de 
+            différentes feuilles de style.
+        </p>
+    
+        <h2><u>XHTML</u></h2>
+        <p>
+            <u>XHTML : eXtensible HyperText Markup Language</u> <br>
+            C’est une variante du langage HTML et lui ressemble beaucoup. <br>
+            XHTML 1 est apparu suite à la version 4 du langage HTML (HTML 4). <br>
+            Il fonctionne sur des règles plus strictes que le HTML. <br>
+            C’est une version de HTML conforme au standard XML. <br>
+            <u>Différences entre HTML et XHTML</u><br>
+            La différence se joue principalement sur la syntaxe qui est plus rigoureuse <br>
+            Les différences de syntaxe sont minimes <br>
+            facilité de passer de l’un à l’autre <br>
+            Dans ce cours, nous ferons du XHTML (les différences seront discutées au fur et à 
+            mesure qu’on avance dans le cours) 
+        </p>
+    
+        <h2><u>Document HTML</u></h2>
+        <p>
+            Un document (ou page) HTML est constitué de : <br>
+            * <b>Textes simples</b> :
+            Pour écrire « Bonjour » dans une page, il suffit d’écrire ce même texte dans le code de la page. <br>
+            * <b>Balises</b> :
+            Les balises peuvent éventuellement avoir des attributs.
+        </p>
+    
+        <h2><u>Les Balises</u></h2>
+        <p>
+            Les balises HTML sont les éléments de base du codage HTML d’une page web. Une balise est 
+            délimitée par un « &lt; » et un « &gt; » respectivement pour ouvrir et fermer la balise HTML d’une page
+            web. Une balise est délimitée par un « &lt; » et un « &gt; » respectivement pour ouvrir et fermer la 
+            balise. <br>
+            Elles sont invisibles pour le visiteur : 
+            Ce sont des marqueurs donnant des directives au navigateur (paragraphe, saut de ligne, etc.)
+            Le visiteur peut les voir en visualisant le code source de la page. <br>
+            Elles disposent d’une balise ouvrante et d’une balise fermante à l’exception des balises
+            « orphelines ». Les balises orphelines sont fermées juste après leur ouverture 
+            ( Ex : <b>&lt;br&gt;</b> ). Les balises orphelines n’ont pas de contenu
+        </p>
+    
+        <h2><u>Le doctype</u></h2>
+        <p>
+            Définit le langage utilisé par la page ainsi que le jeu de règles voulu.
+            Elle précise la syntaxe (HTML ou XHTML) et le numéro de version utilisée.
+            Il ne s’agit pas de « parcoeuriser » la chaine, mais de comprendre le pourquoi de sa présence. <br>
+            Peut être utilisé pour dire qu'un document contient du HTML « valide », pour détecter les erreurs 
+            de balisage.
+        </p>
+    
+        <h2><u>XHTML</u></h2>
+        <h3><u>Le document</u></h3>
+        <p>
+            Un document XHTML se délimite par les balises <b>&lt;html&gt;</b> et <b>&lt;/html&gt;</b>. <br>
+            Exemple : <br>
+            … <br>
+            &lt;html&gt; <br>
+            … <br>
+            &lt;/html&gt; <br>
+        </p>
+    
+        <h3><u>Les entêtes</u></h3>
+        <p>
+            Les en-têtes sont délimitées par les balises <b>&lt;head&gt;</b> et <b>&lt;/head&gt;</b>.
+            elles ne sont pas directement destinées à l’affichage. <br>
+            Le contenu de l'élément <b>« title »</b> est le titre du document. il est affiché dans la barre de 
+            titre du navigateur et est exploité par les moteurs de recherche. <br>
+            L'élément <b>« meta »</b> permet de donner des informations supplémentaires sur le document.
+        </p>
+    
+        <h3><u>Le corps</u></h3>
+        <p>
+            Les balises <b>&lt;body&gt;</b> et <b>&lt;/body&gt;</b> délimitent le corps de la page. <br>
+            Exemple : <br>
+            … <br>
+            &lt;body&gt; <br>
+            … <br>
+            &lt;/body&gt; <br>
+        </p>
+    
+        <h3><u>Les commentaires</u></h3>
+        <p>
+            Il est souvent utile de commenter son code source afin d’en faciliter la relecture.
+            Les commentaires ne sont pas interprétés par le navigateur; ils sont invisibles au visiteur.
+        </p>
+    
+        <h2><u>Organiser son texte</u></h2>
+        <h3><u>Le titre</u></h3>
+        <p>
+            Il existe six niveaux de titres, par ordre d'importance décroissante h1 à h6 : <br>
+            &lt;h1&gt; &lt;/h1&gt; : En général, on s'en sert pour afficher le titre de la page. <br>
+            &lt;h2&gt; &lt;/h2&gt; : utilisé souvent pour donner un titre aux paragraphes. <br>
+            &lt;h3&gt; &lt;/h3&gt; : utilisé souvent pour donner un "sous-titre" aux paragraphes. <br>
+            &lt;h4&gt; &lt;/h4&gt; : peu utilisé. <br>
+            &lt;h5&gt; &lt;/h5&gt; : peu utilisé. <br>
+            &lt;h6&gt; &lt;/h6&gt; : peu utilisé. <br>
+        </p>
+    
+        <h3><u>Les paragraphes</u></h3>
+        <p>
+            En XHTML, il est possible de segmenter son texte en paragraphes.
+            Chaque paragraphe se trouve entre les balises &lt;p&gt; et &lt;/p&gt;.
+            L'élément &lt;br&gt; permet d'insérer un saut de ligne à l'intérieur d'un paragraphe;
+            Avant de l'utiliser, il faut se demander s'il n'y a pas lieu de scinder ce dernier en 
+            deux éléments p distincts
+        </p>
+    
+        <h3><u>La mise en forme</u></h3>
+        <p>
+            Mettre en gras : &lt;b&gt;texte&lt;/b&gt; <br>
+            Mettre en italique : &lt;i&gt;texte&lt;/i&gt; <br>
+            Souligner un texte: &lt;u&gt;texte&lt;/u&gt; <br>
+            Mettre en exposant : &lt;sup&gt;texte&lt;/sup&gt; <br>
+            Mettre en indice : &lt;sub&gt;texte&lt;/sub&gt; <br>
+        </p>
+    
+        <h2><u>Les liens</u></h2>
+        <p>
+            Un lien hypertexte est un élément HTML permettant d'envoyer le visiteur vers une nouvelle page 
+            (lien externe) ou vers une autre zone de la page courante (lien interne). Un lien sera représenté 
+            dans le code par la balise &lt;a&gt;. L'adresse de destination doit se trouver dans l'attribut 
+            href. <br>
+            <u>Exemple</u> : &lt;a href="chemin/du/fichier/destination.html"&gt;Texte du lien&lt;/a&gt;. <br>
+            Il faut indiquer le chemin pour accéder à la page de destination. Si les 2 pages sont sur le 
+            même répertoire, on indique juste le nom de la page. <br>
+            <u>Exemple</u> : &lt;a href="destination.html"&gt;Texte du lien&lt;/a&gt;. <br>
+            Si la page de destination se trouve par exemple dans un sous dossier. <br>
+            <u>Exemple</u> : &lt;a href="sous_dossier/destination.html"&gt;Texte du lien&lt;/a&gt;. <br>
+            Lien vers un site externe, on indique l’url complet du site : 
+            &lt;a href="http://www.google.sn"&gt;lien vers google&lt;/a&gt;. <br>
+            L’attribut « title » affiche une bulle d’aide lorsqu’on pointe la souris sur le lien: <br>
+            &lt;a href="http://www.google.sn target='_blank' title='lien vers google sur une nouvelle 
+            page' "&gt;lien vers google&lt;/a&gt;. <br>
+            Il est possible d’utiliser les liens pour envoyer un email : 
+            &lt;a href="mailto:webmaster@monsite.sn"&gt;Ecrivez-moi&lt;/a&gt;. <br>
+            Les ancres permettent de naviguer à l'intérieur d'une même page.
+            Pour faire une ancre, il faut utiliser le signe dièse (#) suivi d'un mot-clef : 
+            &lt;a href=""#motClef"&gt;Texte de mon ancre&lt;/a&gt;. <br>
+        </p>
+    
+        <h2><u>Les listes</u></h2>
+        <p>
+            <b><u>Listes non ordonnées</u></b> : <br>
+            &lt;UL&gt;Eléments de la liste&lt;/UL&gt; <br>
+            Attribut optionnel : TYPE="DISC", "SQUARE" ou "CIRCLE". <br>
+            <b><u>Listes ordonnées</u></b> : <br>
+            &lt;OL&gt;Eléments de la liste&lt;/OL&gt; <br>
+            Attribut optionnel : 
+            TYPE="1" (décimal), "a" (minuscule), "A"(majuscule), "i" ou "I" (romain).
+            Eléments de la liste : &lt;li&gt;&lt;/li&gt;
+        </p>
+    
+        <h2><u>Les images</u></h2>
+        <p>
+            Pour afficher une image, on utilise la balise &lt;img&gt;.
+            L'attribut « src » permet de renseigner le chemin de l'image <br>
+            L’attribut « alt » permet de renseigner le texte à afficher si l’image n’est pas chargée <br>
+            Est aussi exploité par les moteurs de recherche <br>
+            L’attribut « height » permet de définir la hauteur de l’image <br>
+            L’attribut « width » permet de définir la largeur de l’image <br>
+            &lt;img src=« chemin/de/l/image" alt="texte si l’image ne s’est pas chargée"&gt;
+        </p>
+        
+        
+        
+        <ul>
+            <li><a href="../accueil/accueil.html">Aller vers la page d'accueil</a></li>
+            <li><a href="../css/learnCSS.html">Apprendre CSS</a></li>
+            <li><a href="../Js/learnJS.html">Apprendre Javascript</a></li>
+        </ul>
+    </div>
+</body>
+</html>

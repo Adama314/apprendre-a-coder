@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="learnJS.css">
+    <title>Apprendre javascript</title>
+</head>
+<body>
+    <div>
+        <h1><u>Apprendre le langage javascript</u></h1>
+        <h2><u>CONTENU</u></h2>
+        <ul type="disc">
+            <li>Elément de base du langage</li>
+            <li>Lecture / Ecriture de données</li>
+            <li>Variables et Types de données</li>
+            <li>Opérateurs</li>
+            <li>Structures conditionnelles et itératives</li>
+            <li>Les fonctions</li>
+            <li>Les tableaux</li>
+            <li>Gestion des évènements</li>
+            <li>Les objets</li>
+            <li>DHTML</li>
+        </ul>
+
+        <h2><u>C’est quoi JavaScript ?</u></h2>
+        <p>
+            Historiquement, le premier langage de script pour le Web, javascript est un langage de 
+            script incorporé dans le HTML. Il apporte des améliorations au HTML. <br>
+            Il est gratuit et disponible sur tous les navigateurs actuels et n’est pas uniformément 
+            supporté. HTML permet de décrire le contenu tandis que JavaScript permet de rendre le 
+            contenu interactif. <br> Il permet ainsi de faire une validation de formulaires, des animations,
+            des affichage de popup ou de boite de dialogue etc.
+        </p>
+
+        <h2><u>Qu’est-ce qu’un script ?</u></h2>
+        <p>
+            C’est une portion de code qui vient s'insérer dans une page HTML. Le code du script n'est 
+            toutefois pas visible dans la fenêtre du navigateur. Le code est compris entre des balises 
+            spécifiques qui signalent au navigateur qu'il s'agit d'un script écrit en langage JavaScript.
+            La balises annonçant le code Javascript est : 
+            &lt;SCRIPT&gt;
+                Le code Javascript ici…
+            &lt;/SCRIPT&gt;
+        </p>
+
+        <h2><u>Eléments de bases du langages</u></h2>
+        <p>
+            Nous aborderons les éléments suivants dans ce cours.
+        </p>
+        <ul type="disc">
+            <li>Commentaires</li>
+            <li>Lecture/Ecriture</li>
+            <li>Types et variables</li>
+            <li>Opérateurs</li>
+            <li>Instructions de contrôle</li>
+            <li>Fonction</li>
+            <li>Evènements</li>
+            <li>Objets</li>
+        </ul>
+
+        <h3><u>Les commentaires</u></h3>
+        <p>
+            Permet d’améliorer la lisibilité du code <br>
+            N’est pas visible sur la page affichée par le navigateur <br>
+            Commentaires sur une ligne se fait avec deux slashs : // Mon commentaire monoligne. <br>
+            Commentaire sur plusieurs lignes est compris entre /* et */ <br>
+            /* Voici un commentaire sur <br> Plusieurs lignes */
+        </p>
+
+        <h3><u>Les boites de dialogues</u></h3>
+        <p>
+            alert() : affiche une boite de dialogue avec le message fourni en paramètre. <br>
+            prompt() : ouvre une boîte de dialogue avec une zone de saisie et deux boutons (OK et 
+            Annuler). Il retourne aussi la valeur saisie sous forme de chaine de caractères : <br>
+            Retourne « null » si l’utilisateur annule la saisie <br>
+            Retourne la chaine vide si on appuie directement sur OK <br>
+            confirm() : ouvre une boîte de dialogue avec deux boutons : OK et Annuler <br>
+            Retourne <b>true</b> ou <b>false</b> selon que l’utilisateur aie appuyé sur OK ou Annuler
+        </p>
+
+        <h3><u>Les tableaux</u></h3>
+        <p>
+            Y'a deux types de déclarations : <br> var couleurs = new Array(‘vert’, ‘jaune’, ‘rouge’); <br>
+            var couleurs = [‘vert’, ‘jaune’, ‘rouge’]; <br>
+            Les indices du tableau commencent par 0 <br>
+            <em><u>Exemple</u></em> :  alert(couleurs[1]); // affiche jaune <br>
+            La longueur du tableau peut être récupéré en faisant nomTableau.length <br>
+            <em><u>Exemple</u></em> : alert(couleurs.length);
+        </p>
+
+        <h3><u>Structures conditionnelles</u></h3>
+        <p>
+            <b>Utilisation de if else</b> <br>
+            if (condition booléenne) <br>
+            { <br>
+                Instructions à exécuter si « oui » <br>
+            } <br>
+            else <br>
+            { <br>
+                Instructions à exécuter si « non » <br>
+            } <br> <br>
+
+            <b>Utilisation de switch</b> <br>
+            switch(x) { <br>
+                case 1 : instructions 1; break; <br>
+                case 2 : instructions 2; break; <br>
+                ... <br>
+                case n : instructions 3; break; <br>
+                default : instructions 4; break; <br>
+                }
+        </p>
+
+        <h3><u>Structures itératives</u></h3>
+        <p>
+            <b><u>for</u></b> <br>
+            for (valeur de départ; contrôle pour sortie; progression) <br>
+            { <br>
+                Instructions à itérer <br>
+            } <br> <br>
+
+            <b><u>while</u></b> <br>
+            while(condition) <br>
+            { <br>
+                suite d’instructions; <br>
+            } <br>
+        </p>
+
+        <h2><u>Fonctions</u></h2>
+        <p>
+            <b><em><u>Syntaxe</u></em></b> <br>
+            function maFonction(arg1, arg2, …, argN) <br>
+            { <br>
+                ... instructions; ... <br>
+                return valeur_du_résultat; <br>
+            } <br> <br>
+
+            <em><u>Exemple</u></em> <br>
+            &lt;script&gt; <br>
+                function volumeCylindre <br>
+                (r,h) { <br>
+                pi=3.14159; <br>
+                return pi*r*r*h; <br>
+                } <br>
+                alert <br>
+                (volumeCylindre(1,2)); <br>
+            &lt;/script&gt; <br>
+        </p>
+
+        <h3><u>Fonctions prédéfinies (méthodes)</u></h3>
+        <p>
+            <b><em>Dates</em></b> : getDate(), getHour(), getYear(), setDate(), … <br>
+            <b><em>Math</em></b> : random(), sin(), cos(), pw(), log(), sqrt(), floor(), max(), min(), … <br>
+            <b><em>Chaînes de caractères</em></b> : toLowerCase(), toUpperCase(), indexOf(), substring(), 
+            charAt(), … etc <br>
+        </p>
+
+        <h3><u>Utilisation de fonctions dans des formulaires</u></h3>
+        <p>
+            <b><em>Head</em></b> : Contient la définition des fonctions <br>
+            <b><em>Body</em></b> : Contient la définition du formulaire, il fait appel aux variables et 
+            fonctions définies dans le « head ». <br>
+            <em><u>Exemple </u></em> : <br>
+            * Lire un nombre et écrire son double : <br>
+            Saisie du nombre : &lt;input type="text" id= "nombre" size="3"&gt; <br>
+            * Traitement : <br>
+            resultat.value = Number(nombre.value) * 2;
+        </p>
+
+        <h2><u>La gestion des évènements</u></h2>
+        <p>
+            C’est l’intérêt de JS en matière de programmation Web, JS permet de réagir à certaines 
+            actions de l’utilisateur. <br>
+            Schéma générale de programme : <br> On précise l’événement (Event) clic souris, survol 
+            de zone, chargement de page, … <br>
+            Et le gestionnaire d’évènement correspondant (onEvent) :  onClick, onMouseOver, onLoad, …, 
+            définis sous forme d’attributs associés aux éléments HTML <br>
+            Généralement &lt;BaliseHTMLSource onEvent=“actions_ou_fonctions_JS”…/&gt;
+        </p>
+
+        <ul>
+            <li><a href="../accueil/accueil.html">Aller vers la page d'accueil</a></li>
+            <li><a href="../html/learnHTML.html">Apprendre html</a></li>
+            <li><a href="../css/learnCSS.html">Apprendre css</a></li>
+        </ul>
+    </div>
+</body>
+</html>

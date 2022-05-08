@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="inscript.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Inscription</title>
+</head>
+<body>
+<main>
+
+    <h1 class="titre">INSCRIPTIONS</h1>
+
+    <table>
+        <tr>
+            <td><label for="Prenom">Prenom</label></td>
+            <td><input type="text" id="Prenom"></td>
+        </tr>
+        <tr>
+            <td><label for="Nom">Nom</label></td>
+            <td><input type="text" id="Nom"></td>
+        </tr>
+        <tr>
+            <td>Date de Naissance</td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td>Âge</td>
+            <td><input type="number" placeholder="Selectionner vôtre age" id="number" min="10" step="5" max="150"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" placeholder="email"></td>
+        </tr>
+    </table>
+
+    <p> Genre : 
+        <label for="homme">Homme</label>
+        <input type="radio" name="sexe" id="homme">
+        
+        <label for="femme">Femme</label>
+        <input type="radio" name="sexe" id="femme">
+    </p>
+
+    <hr class="light">
+    
+    <table>
+        <tr>
+            <!-- colspan="3" c'est pour mettre à la même ligne les contenu des trois lignes -->
+            <td colspan="3"> 
+                <fieldset> <legend>Quelle(s) langage(s) voulez-vous apprendre :</legend>
+                    <label for="html">Html</label>
+                    <input type="checkbox">
+
+                    <label for="css">Css</label>
+                    <input type="checkbox">
+
+                    <label for="js">Javascript</label>
+                    <input type="checkbox">
+
+                    <label for="php">Php</label>
+                    <input type="checkbox">
+                </fieldset>
+            </td>
+        </tr>
+        </table>
+        
+        <p> Comment jugez-vous votre niveau en programmation : <br>
+            <label for="bien">Bien</label>
+            <input type="radio" name="niveau">
+            
+            <label for="assez bien">Assez bien</label>
+            <input type="radio" name="niveau">
+
+            <label for="très bien">Très bien</label>
+            <input type="radio" name="niveau">
+        </p>
+    
+    <p>
+        <label for="pays">Adresse</label>
+        <select name="pays" id="pays">
+            <optgroup label="Town">
+                <option value="Saint-Louis">Saint-Louis</option>
+                <option value="Dakar">Dakar</option>
+                <option value="Kedougou">Kedougou</option>
+                <option value="Matam">Matam</option>
+            </optgroup>
+                <optgroup label="City">
+                <option value="Ziguinchor">Ziguinchor</option>
+                <option value="Louga">Louga</option>
+                <option value="Rufisque">Rufisque</option>
+            </optgroup>
+                <optgroup label="Other Countries">
+                <option value="Kolda">Kolda</option>
+                <option value="Kaolack">Kaolack</option>
+                <option value="Kaffrine">Kaffrine</option>
+            </optgroup>
+                <optgroup label="Reste des pays">
+                <option value="Sedhiou">Sedhiou</option>
+                <option value="Fatick">Fatick</option>
+                <option value="Tambacounda">Tambacounda</option>
+                <option value="Diourbel">Diourbel</option>
+            </optgroup>
+        </select>
+    </p>
+
+    <hr class="light">
+    
+   
+
+    <table>
+        <tr>
+            <td>
+                <label for="commentaire">Comment : </label>
+                <textarea name="commentaire" id="commentaire" cols="30" rows="10"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="checkbox" checked>Accepter les conditions du contrat !?
+                <br><input type="submit" name="" id="" value="Soumettre">
+            </td>
+        </tr>
+    </table>
+</main>
+</body>
+</html>

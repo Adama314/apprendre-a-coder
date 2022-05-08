@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', cursive;
+    /*font-weight: 100;*/
+}
+
+body{
+    background-color: #FFF7EE;
+}
+
+h2{
+    text-align: center;
+}
+
+header{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 10%;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    text-transform: uppercase;
+    background-color: #1F2A36;
+}
+
+hr{
+    width: 15%;
+}
+
+h1{
+    margin-top: 10px;
+    font-family: 'Montserrat', 'Abril FatFace', 'Agency FB', cursive;
+    /*font-weight: 75;*/
+}
+
+#inscript img{
+    position: absolute;
+    right: 7%;
+    list-style-type: none;
+    width: 120px;
+    margin-top: 3px;
+    /*margin-bottom: 15px;*/
+}
+
+nav{
+    position: absolute;
+    border-top: 25px;
+    top: 10%;
+    left: 0%;
+    right: 75%;
+    padding: 10px;
+    /*border-right: solid 1px lightgray ;
+    background-color: red;*/
+}
+
+#nav-bar{
+    /* list-style-type: none; */
+    border: solid 1px #006D80;
+    margin-top: 30px;
+}
+
+nav li a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+#nav-bar li a:hover{
+    /* color: lightcoral; */
+    background-color: #1F2A36;
+    color: white;
+    margin-right: 0px;
+}
+
+#my-nav{
+    border: solid 1px #006D80;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+#my-nav img{
+    width: 90px;
+}
+#mon-cv a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+#mon-cv a:hover{
+    /* color: lightcoral; */
+    background-color: #1F2A36;
+    color: white;
+}
+
+main{
+    /*background-color: yellow;*/
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    padding: 10px;
+}
+
+

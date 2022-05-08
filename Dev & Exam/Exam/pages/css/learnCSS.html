@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="learnCSS.css">
+    <title>Apprendre le langage css</title>
+</head>
+<body>
+    <div>
+        <h1><u>HTML ET CSS</u></h1>
+        <p>
+            le W3C préconise de maintenir une séparation entre la structure et la présentation d’un 
+            document (Séparation du fond et de la forme).
+            Il adjoint au HTML la notion de feuille de style à travers le langage CSS;
+            HTML décrit la structure du document, CSS se charge de la présentation.
+            Un même document HTML peut être présenté de différentes façons à l'aide de 
+            différentes feuilles de style.
+        </p>
+
+        <h2><u>Les feuilles de styles CSS</u></h2>
+        <p>
+            Apparues vers les années 1990s, Standard W3C qui s’est imposé au détriment de la 
+            “confrontation” Nescape Navigator/Internet Explorer. Chacun créait ses propres balises 
+            de mise en forme. <br> Plusieurs versions existent (CSS1, CSS2, CSS3). Leur champ d’action ne 
+            s’étend pas uniquement au médium screen, autres médias: print, projection, braille, 
+            aural/speech, …
+        </p>
+
+        <h2><u>Rôle des feuilles de styles</u></h2>
+        <p>
+            Mise en forme des pages Web <br>
+            Séparation du fond et de la forme <br>
+            Plusieurs vertues <br>
+            Contribuer à la rapidité de la navigation sur le Web <br>
+            Les feuilles de style sont conservées dans le cache du client <br>
+            Leur utilisation est imposée en XHTML <br>
+        </p>
+
+        <h2><u>Localisation des feuilles de styles</u></h2>
+        <p>
+            <u>Balise STYLE</u> : <br> en entête de page
+            &lt;style type=“text/css”&gt;….&lt;/style&gt; <br>
+            <u>Balise LINK</u> : <br> En entête de page
+            &lt;link rel=“stylesheet” type= “text/css” href=“url”/&gt; <br>
+            <u>Attribut STYLE des éléments HTML</u> (dans tout le corps du document) <br>
+            &lt;baliseOuvranteOuVide style=“…”&gt;
+        </p>
+
+        <h2><u>Syntaxe des feuilles de styles</u></h2>
+        <p>
+            Différente de HTML; une feuille de styles est un ensembre de règles. <br>
+            Forme d’une règle : Un <b>sélecteur</b> est Elément ou groupe d’’éléments HTML.
+            Une <b>déclaration</b> est une liste d’associations attributs : valeurs séparées par 
+            des “;”, le tout entre accolades. <br>
+            <u>Exemple de règle</u> : <br>
+            h1 { color: blue; text-align: center;} <br>
+            Non sensibles à la casse; Il est conseillé de les écrire en lettres minuscules.
+        </p>
+
+        <h2><u>La règle @import</u></h2>
+        <p>
+            Intégrée depuis CSS2 <br>
+            &lt;style type="text/css"&gt;&lt;/style&gt; <br>
+            @import url(styles.css); <br>
+            &lt;/style&gt; <br>
+            Permet d’inclure des feuilles de styles dans d’autres. Ce qui permet de créer des feuilles 
+            de styles dynamiques sans devoir recopier plusieurs fois le même code. <br>
+            Différence avec &lt;link&gt;?
+        </p>
+
+        <h2><u>Les différents sélecteurs</u></h2>
+        <p>
+            <em><b>Les sélecteurs de balises</b></em> : Utilisés dans le précédent exemple. <br>
+            <em><b>Les sélecteurs de classes</b></em> : Une classe est un nom donné à un ensemble 
+            d’éléments HTML à distinguer. <br>
+            <em><b>Les sélecteurs d’identifiants</b></em> : Un identifiant ou id est le nom attribué 
+            à un élément unique dans le document HTML. <br>
+            <em><b>Les pseudo-classes et les pseudo-éléments</b></em> : Variantes pour certaines 
+            fonctionnalités, par exemple les liens.
+        </p>
+
+        <h3><u>Les sélecteurs de balises</u></h3>
+        <p>
+            Toutes les balises HTML <br>
+            <em><u>Exemple</u></em> <br>
+            p {margin-top: 0; margin-bottom: 0 } : <br>
+            Supprime tous les interlignes entre paragraphes en attribuant à la balise &lt;p&gt; des marges 
+            haute et basse nulles.
+        </p>
+
+        <h3><u>Les sélecteurs de classes</u></h3>
+        <p>
+            Une classe est un nom composé de caractères alphanumériques et dont on baptise les 
+            éléments concernés. Un sélecteur de classe reprend son nom en le préfixant d’un point. <br>
+            <em><u>Exemples</u></em><br>
+            .ma_classe, .toto, .entete, … <br>
+            Pour attribuer un comportement différent à certains éléments, il suffit de leur appliquer au 
+            moins une classe. Une classe peut s’appliquer à des éléments différents.
+            Le même élément peut recevoir plusieurs classes. <br>
+            <em><u>Exemples</u></em><br>
+            sommaire { color: red; } <br>
+            .titre2 { text-align: center; } <br>
+            &lt;a href=“..." class="sommaire"&gt;lien rouge&lt;/a&gt; <br>
+            &lt;p class="sommaire titre2"&gt;un paragraphe rouge et centré &lt;/p&gt;
+        </p> 
+
+        <ul>
+            <li><a href="../accueil/accueil.html">Aller vers la page d'accueil</a></li>
+            <li><a href="../html/learnHTML.html">Apprendre html</a></li>
+            <li><a href="../Js/learnJS.html">Apprendre Javascript</a></li>
+        </ul>
+    </div>
+</body>
+</html>

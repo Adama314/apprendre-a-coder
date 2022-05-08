@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', cursive;
+    /*font-weight: 100;*/
+}
+
+body{
+    background-color: #FFF7EE;
+}
+
+h1{
+    text-align: center;
+}
+
+a:hover{
+    color: lightcoral;
+}
+
+a{
+    text-decoration: none;
+    color: #006D80;
+}
